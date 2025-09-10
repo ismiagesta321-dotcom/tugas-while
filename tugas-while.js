@@ -1,24 +1,12 @@
-function cekNilai() {
-      let nilai = parseInt(document.getElementById("nilai").value);
-      let hasil = "";
+// Lulus pakai while //
+var nilai=6;
 
-      if (nilai >= 1 && nilai <= 10) {
-        if (nilai >= 6) {
-          // menggunakan while
-          let i = 0;
-          while (i < 1) {
-            hasil = "Lulus 🎉";
-            i++;
-          }
-        } else {
-          // menggunakan for
-          for (let j = 0; j < 1; j++) {
-            hasil = "Tidak Lulus ❌";
-          }
-        }
-      } else {
-        hasil = "Nilai harus antara 1 sampai 10!";
-      }
+while (nilai <=10) {
+    console.log("Nilai " + nilai + " = Lulus");
+    nilai++;
+}
 
-      document.getElementById("hasil").innerText = hasil;
-    }
+// Tidak Lulus pakai for //
+for (var nilai=1; nilai<6; nilai++){
+    console.log("Nilai " + nilai + " = Tidak Lulus")
+}
